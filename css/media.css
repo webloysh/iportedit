@@ -12,14 +12,14 @@
 }
 
 /* Small Devices, Tablets */
-@media only screen and (max-width : 768px) {
+@media only screen and (max-width : 480px) {
 
 
 
 }
 
 /* Extra Small Devices, Phones */
-@media only screen and (max-width : 480px) {
+@media only screen and (max-width : 768px) {
 
 .top_header {
 	min-height: 480px;
@@ -73,7 +73,7 @@
 }
 */
 .header_info .header_info_row .header_info_centered .company_descr_wrap .company_name_wrap h1 {
-	font-size: 48px;
+	font-size: 42px;
 }
 
 .header_info .header_info_row .header_info_centered .company_descr_wrap .company_descr_wrap h2 {

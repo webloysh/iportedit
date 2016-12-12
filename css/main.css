@@ -3,6 +3,7 @@ body {
   font-weight: normal;
   font-size: 16px;
   min-width: 320px;
+  min-height: 480px;
   position: relative;
   line-height: 1.42857;
   -webkit-font-smoothing: antialised; }
@@ -21,30 +22,22 @@ body textarea:required:valid {
 .top_header {
   font-size: 18px;
   min-height: 620px;
-  background-color: rgba(0, 0, 0, 0.85);
-  width: 100%; }
-
-.parallax-window {
-  height: 620px;
-  background: transparent; }
-  .parallax-window .bglayer {
-    background: transparent;
-    position: absolute;
-    width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
+  background: url("../img/bgmain.svg") no-repeat center rgba(0, 0, 0, 0.85);
+  background-size: cover;
+  background-attachment: fixed; }
+  .top_header .bglayer {
+    background-color: rgba(0, 0, 0, 0.3);
+    min-height: 620px; }
 
 .header_info {
-  background-color: rgba(0, 0, 0, 0.3);
   display: table;
   position: absolute;
   width: 100%;
-  height: 100%;
   top: 0;
   left: 0;
   z-index: 10; }
+  .header_info ul {
+    margin-top: 5px; }
   .header_info .header_nav {
     display: table-row; }
   .header_info .right {
@@ -134,20 +127,20 @@ body textarea:required:valid {
               margin-right: 5px;
               color: #fe5b5d; }
 
-.header_info .contacts_wrap {
+.contacts_wrap {
   color: #2db2c4;
-  display: inline-block;
+  display: block;
   padding: 0; }
-  .header_info .contacts_wrap ul, .header_info .contacts_wrap li {
+  .contacts_wrap ul, .contacts_wrap li {
     list-style-type: none;
     padding: 0; }
-  .header_info .contacts_wrap li {
+  .contacts_wrap li {
     font-weight: 400;
     margin-bottom: 4px; }
-  .header_info .contacts_wrap a {
+  .contacts_wrap a {
     color: #55feb4;
     letter-spacing: 1px; }
-    .header_info .contacts_wrap a:hover {
+    .contacts_wrap a:hover {
       border-bottom: 1px solid #55feb4; }
 
 .dark_wrap {
@@ -252,23 +245,15 @@ body textarea:required:valid {
 
 .callbackform {
   color: #55feb4;
-  background-color: rgba(0, 0, 0, 0.85);
+  background: url("../img/bg_eur_4c.svg") no-repeat center rgba(0, 0, 0, 0.85);
+  background-size: cover;
+  background-attachment: fixed;
   height: 620px; }
-  .callbackform .darkformwrap {
-    background-color: rgba(0, 0, 0, 0.7);
-    width: 100%;
-    height: 100%;
-    z-index: 10;
-    position: relative; }
   .callbackform .bglayerform {
-    background: transparent;
-    height: 620px;
-    position: relative;
+    background-color: rgba(0, 0, 0, 0.64);
     width: 100%;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0; }
+    height: 620px;
+    z-index: 1; }
   .callbackform .blockform_wrap {
     margin-top: 60px; }
   .callbackform .form_descrwrap {
@@ -319,27 +304,19 @@ body textarea:required:valid {
 footer {
   background-color: rgba(0, 0, 0, 0.7);
   color: #55feb4; }
-  footer .contacts_wrap {
-    text-align: center; }
-    footer .contacts_wrap .minilogo_wrap {
-      display: inline-block;
-      margin: 10px; }
-      footer .contacts_wrap .minilogo_wrap h1 {
-        font-weight: 800;
-        margin: 0;
-        padding: 0;
-        letter-spacing: 1px; }
-  footer .contacts {
+  footer .minilogo_wrap {
     display: inline-block;
-    margin: 10px;
-    text-align: center; }
-    footer .contacts p {
-      padding: 0;
+    margin: 10px; }
+    footer .minilogo_wrap h1 {
+      color: #fe5b5d;
+      font-weight: 800;
       margin: 0;
-      font-weight: 400; }
-    footer .contacts a {
-      color: #1fc87e; }
-    footer .contacts h3 {
       padding: 0;
-      margin: 0;
-      font-weight: 400; }
+      letter-spacing: 1px; }
+
+.contacts_wrap {
+  margin-left: 5px;
+  display: inline-block;
+  font-size: 14px; }
+  .contacts_wrap ul li {
+    margin-bottom: 1px; }
