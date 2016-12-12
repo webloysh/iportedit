@@ -10,8 +10,10 @@ $(document).ready(function() {
 			// $(".header_info_row").css("height", $(window).height());
 	$('.top_header').height($(window).height());
 	$('.bglayer').height($(window).height());
-	$('.parallax-window').height($(window).height());
 	$('.header_info').height($(window).height());
+	// $(".bglayer").css("min-height", $(window).height());
+	// $(".header_info").css("min-height", $(window).height());
+	// $(".top_header").css("min-height", $(window).height());
 	};
 	heightDetect()
 	$(window).resize(function()  {
