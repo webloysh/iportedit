@@ -313,10 +313,9 @@ footer {
       margin: 0;
       padding: 0;
       letter-spacing: 1px; }
-
-.contacts_wrap {
-  margin-left: 5px;
-  display: inline-block;
-  font-size: 14px; }
-  .contacts_wrap ul li {
-    margin-bottom: 1px; }
+  footer .contacts_wrap {
+    margin-left: 5px;
+    display: inline-block;
+    font-size: 14px; }
+    footer .contacts_wrap ul li {
+      margin-bottom: 1px; }
