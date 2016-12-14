@@ -42,12 +42,12 @@ body textarea:required:valid {
     display: table-row; }
   .header_info .right {
     text-align: left;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s; }
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
   .header_info .left {
     text-align: right;
-    -webkit-animation-delay: 2s;
-    animation-delay: 2s; }
+    -webkit-animation-delay: 1.5s;
+    animation-delay: 1.5s; }
   .header_info .top_nav_wrap .top_nav {
     color: #55feb4;
     font-size: 16px;
@@ -101,7 +101,8 @@ body textarea:required:valid {
           font-weight: 400;
           font-size: 18px;
           padding: 0;
-          margin: 0; }
+          margin: 0;
+          text-transform: uppercase; }
         .header_info .header_info_row .header_info_centered .company_descr_wrap .company_name_wrap {
           padding: 0;
           margin: 0; }
@@ -151,8 +152,8 @@ body textarea:required:valid {
 .button_wrap {
   margin-top: 40px;
   text-align: center;
-  -webkit-animation-delay: 5s;
-  animation-delay: 5s; }
+  -webkit-animation-delay: 1.8s;
+  animation-delay: 1.8s; }
   .button_wrap i {
     margin-right: 10px; }
 
@@ -300,11 +301,15 @@ body textarea:required:valid {
       max-width: 460px;
       resize: none;
       padding-left: 4px; }
+      .callbackform .pop_form .aboutyou .button_wrap {
+        -webkit-animation-delay: 1s;
+        animation-delay: 1s; }
 
 footer {
   background-color: rgba(0, 0, 0, 0.7);
   color: #55feb4; }
   footer .minilogo_wrap {
+    text-align: center;
     display: inline-block;
     margin: 10px; }
     footer .minilogo_wrap h1 {
